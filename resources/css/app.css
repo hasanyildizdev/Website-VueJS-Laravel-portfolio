@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .mybutton{
+        @apply text-old_green hover:text-white font-extrabold text-xl hover:scale-110 transition-transform duration-150;
+    }
+
+    .section {
+        @apply py-8 lg:py-16;
+    }
+
+    .section-title {
+        @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
+    }
+
+    .subtitle {
+        @apply text-base mb-16 lg:mb-24 max-w-[520px];
+    }
+
+    .btn {
+        @apply py-4 px-6 font-medium text-slate-700 dark:text-white flex items-center justify-center rounded-sm hover:text-amber-600 bg-gray-400 transition-all;
+    }
+
+    .input {
+        @apply  text-white bg-dark-secondary h-[60px] outline-none pl-6 w-full text-[15px] rounded-lg focus:outline focus:outline-1 focus:outline-white;
+    }
+
+    .textarea {
+        @apply text-white bg-dark-secondary resize-none w-full outline-none p-6 rounded-lg h-[200px] focus:outline focus:outline-1 focus:outline-white;
+    }
+
+}
